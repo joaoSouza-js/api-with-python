@@ -1,0 +1,37 @@
+POST http://127.0.0.1:5000/api/products/add HTTP/1.1
+content-type: application/json
+
+{
+  "name": "celular",
+  "price": 20.00,
+  "description": "um televisor de 50 polegadas"
+}
+###
+DELETE  http://127.0.0.1:5000/api/products/delete/3
+
+###
+   http://127.0.0.1:5000/api/products/2
+
+###
+PUT http://127.0.0.1:5000/api/products/update/2
+content-type: application/json
+
+{
+  "name": "Tv 4k do balanço",
+  "price": 20.00,
+  "description": "um televisor de 50 polegadas"
+}
+###
+GET  http://127.0.0.1:5000/api/products
+
+###
+POST http://127.0.0.1:5000/login HTTP/1.1
+content-type: application/json
+
+{
+  "username": "admin",
+  "password": "123",
+  "description": "um televisor de 50 polegadas"
+}
+###
+POST http://127.0.0.1:5000/logout 
